@@ -1,0 +1,183 @@
+$date
+	Sat Feb 01 11:17:16 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module rca_tb $end
+$var wire 8 ! sum [7:0] $end
+$var wire 1 " carry_out $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 1 % carry_in $end
+$scope module DUT $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 1 % carry_in $end
+$var wire 8 ( sum [7:0] $end
+$var wire 1 " carry_out $end
+$var wire 9 ) carry [8:0] $end
+$var parameter 32 * N $end
+$scope begin ripple[0] $end
+$var wire 1 + t1 $end
+$var wire 1 , t2 $end
+$var wire 1 - t3 $end
+$var parameter 2 . i $end
+$upscope $end
+$scope begin ripple[1] $end
+$var wire 1 / t1 $end
+$var wire 1 0 t2 $end
+$var wire 1 1 t3 $end
+$var parameter 2 2 i $end
+$upscope $end
+$scope begin ripple[2] $end
+$var wire 1 3 t1 $end
+$var wire 1 4 t2 $end
+$var wire 1 5 t3 $end
+$var parameter 3 6 i $end
+$upscope $end
+$scope begin ripple[3] $end
+$var wire 1 7 t1 $end
+$var wire 1 8 t2 $end
+$var wire 1 9 t3 $end
+$var parameter 3 : i $end
+$upscope $end
+$scope begin ripple[4] $end
+$var wire 1 ; t1 $end
+$var wire 1 < t2 $end
+$var wire 1 = t3 $end
+$var parameter 4 > i $end
+$upscope $end
+$scope begin ripple[5] $end
+$var wire 1 ? t1 $end
+$var wire 1 @ t2 $end
+$var wire 1 A t3 $end
+$var parameter 4 B i $end
+$upscope $end
+$scope begin ripple[6] $end
+$var wire 1 C t1 $end
+$var wire 1 D t2 $end
+$var wire 1 E t3 $end
+$var parameter 4 F i $end
+$upscope $end
+$scope begin ripple[7] $end
+$var wire 1 G t1 $end
+$var wire 1 H t2 $end
+$var wire 1 I t3 $end
+$var parameter 4 J i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b111 J
+b110 F
+b101 B
+b100 >
+b11 :
+b10 6
+b1 2
+b0 .
+b1000 *
+$end
+#0
+$dumpvars
+1I
+0H
+0G
+0E
+1D
+1C
+1A
+0@
+0?
+0=
+1<
+1;
+19
+08
+07
+05
+14
+13
+11
+00
+0/
+1-
+0,
+0+
+b111111110 )
+b10101010 (
+b11111111 '
+b10101011 &
+0%
+b11111111 $
+b10101011 #
+1"
+b10101010 !
+$end
+#10
+04
+0"
+00
+0D
+0<
+b1000110 !
+b1000110 (
+1@
+b1100000 )
+1/
+01
+0C
+0-
+09
+0;
+1=
+1?
+0A
+0I
+b110100 $
+b110100 '
+b10010 #
+b10010 &
+#20
+0"
+0H
+0@
+b0 )
+0D
+b11111111 !
+b11111111 (
+1+
+17
+1;
+0=
+1C
+1G
+b1111 $
+b1111 '
+b11110000 #
+b11110000 &
+#30
+1"
+1H
+1D
+1@
+1<
+18
+14
+10
+b0 !
+b0 (
+b111111110 )
+0+
+1-
+b1 $
+b1 '
+b11111111 #
+b11111111 &
+#40

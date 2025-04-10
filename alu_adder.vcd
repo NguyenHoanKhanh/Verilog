@@ -1,0 +1,156 @@
+$date
+	Wed Jan 22 10:00:09 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_adder_tb $end
+$var wire 1 ! Cout $end
+$var wire 16 " S [15:0] $end
+$var wire 1 # Zero $end
+$var wire 1 $ Sign $end
+$var wire 1 % Parity $end
+$var wire 1 & Overflow $end
+$var reg 16 ' A [15:0] $end
+$var reg 16 ( B [15:0] $end
+$var reg 1 ) Cin $end
+$scope module DUT $end
+$var wire 16 * A [15:0] $end
+$var wire 16 + B [15:0] $end
+$var wire 1 ) Cin $end
+$var wire 1 ! Cout $end
+$var wire 1 & Overflow $end
+$var wire 16 , S [15:0] $end
+$var wire 1 # Zero $end
+$var wire 1 $ Sign $end
+$var wire 1 % Parity $end
+$var wire 3 - C [2:0] $end
+$scope module AD $end
+$var wire 4 . A [3:0] $end
+$var wire 4 / B [3:0] $end
+$var wire 1 ) Cin $end
+$var wire 4 0 S [3:0] $end
+$var wire 1 1 Cout $end
+$upscope $end
+$scope module AD1 $end
+$var wire 4 2 A [3:0] $end
+$var wire 4 3 B [3:0] $end
+$var wire 1 4 Cin $end
+$var wire 4 5 S [3:0] $end
+$var wire 1 6 Cout $end
+$upscope $end
+$scope module AD2 $end
+$var wire 4 7 A [3:0] $end
+$var wire 4 8 B [3:0] $end
+$var wire 1 9 Cin $end
+$var wire 4 : S [3:0] $end
+$var wire 1 ; Cout $end
+$upscope $end
+$scope module AD3 $end
+$var wire 4 < A [3:0] $end
+$var wire 4 = B [3:0] $end
+$var wire 1 > Cin $end
+$var wire 1 ! Cout $end
+$var wire 4 ? S [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ?
+0>
+b1000 =
+b1000 <
+0;
+b1111 :
+09
+b0 8
+b1111 7
+06
+b1111 5
+04
+b0 3
+b1111 2
+01
+b1111 0
+b0 /
+b1111 .
+b0 -
+b111111111111 ,
+b1000000000000000 +
+b1000111111111111 *
+0)
+b1000000000000000 (
+b1000111111111111 '
+1&
+1%
+0$
+0#
+b111111111111 "
+1!
+$end
+#10
+1>
+b0 :
+1;
+19
+b0 5
+16
+0&
+14
+0$
+b111 -
+11
+1!
+b0 0
+b0 ?
+b10 /
+b0 =
+b1110 .
+b1111 <
+1#
+1%
+b0 "
+b0 ,
+b10 (
+b10 +
+b1111111111111110 '
+b1111111111111110 *
+#20
+b1111 ?
+0>
+b1111 :
+0;
+09
+b1111 5
+06
+04
+b1111 0
+b0 -
+01
+1$
+b101 /
+b101 3
+b101 8
+b101 =
+b1010 .
+b1010 2
+b1010 7
+b1010 <
+0#
+1%
+b1111111111111111 "
+b1111111111111111 ,
+0!
+b101010101010101 (
+b101010101010101 +
+b1010101010101010 '
+b1010101010101010 *
+#30

@@ -1,0 +1,69 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001ace1b46720 .scope module, "mux41_udp_tb" "mux41_udp_tb" 2 1;
+ .timescale 0 0;
+v000001ace1b434a0_0 .net "f", 0 0, L_000001ace1b43900;  1 drivers
+v000001ace1b43540_0 .var "i0", 0 0;
+v000001ace1b435e0_0 .var "i1", 0 0;
+v000001ace1b43680_0 .var "i2", 0 0;
+v000001ace1b43720_0 .var "i3", 0 0;
+v000001ace1b437c0_0 .var "s0", 0 0;
+v000001ace1b43860_0 .var "s1", 0 0;
+S_000001ace1b468b0 .scope module, "UDP" "mux41_udp" 2 5, 3 17 0, S_000001ace1b46720;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "i3";
+    .port_info 1 /INPUT 1 "i2";
+    .port_info 2 /INPUT 1 "i1";
+    .port_info 3 /INPUT 1 "i0";
+    .port_info 4 /INPUT 1 "s1";
+    .port_info 5 /INPUT 1 "s0";
+    .port_info 6 /OUTPUT 1 "f";
+UDP_udp_mux41 .udp/comb "udp_mux41", 6
+ ,"00???00"
+ ,"00???11"
+ ,"01??0?0"
+ ,"01??1?1"
+ ,"10?0??0"
+ ,"10?1??1"
+ ,"110???0"
+ ,"111???1";
+L_000001ace1b43900 .udp UDP_udp_mux41, v000001ace1b43860_0, v000001ace1b437c0_0, v000001ace1b43720_0, v000001ace1b43680_0, v000001ace1b435e0_0, v000001ace1b43540_0;
+v000001ace1b45840_0 .net "f", 0 0, L_000001ace1b43900;  alias, 1 drivers
+v000001ace1b458e0_0 .net "i0", 0 0, v000001ace1b43540_0;  1 drivers
+v000001ace1b45980_0 .net "i1", 0 0, v000001ace1b435e0_0;  1 drivers
+v000001ace1b45a20_0 .net "i2", 0 0, v000001ace1b43680_0;  1 drivers
+v000001ace1b45ac0_0 .net "i3", 0 0, v000001ace1b43720_0;  1 drivers
+v000001ace1b45b60_0 .net "s0", 0 0, v000001ace1b437c0_0;  1 drivers
+v000001ace1b45c00_0 .net "s1", 0 0, v000001ace1b43860_0;  1 drivers
+    .scope S_000001ace1b46720;
+T_0 ;
+    %vpi_call 2 8 "$dumpfile", "muxudp.vcd" {0 0 0};
+    %vpi_call 2 9 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001ace1b46720 {0 0 0};
+    %vpi_call 2 10 "$monitor", "i3 = %b, i2 = %b, i1 = %b, i0 = %b, s1 = %b, s0 = %b, f = %b", v000001ace1b43720_0, v000001ace1b43680_0, v000001ace1b435e0_0, v000001ace1b43540_0, v000001ace1b43860_0, v000001ace1b437c0_0, v000001ace1b434a0_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ace1b43860_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ace1b437c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ace1b43720_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ace1b43680_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ace1b435e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ace1b43540_0, 0, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\mux41_udp_tb.v";
+    ".\mux41_udp.v";

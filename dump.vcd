@@ -1,0 +1,110 @@
+$date
+	Wed Mar 12 14:01:00 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 1 ! Sum_d $end
+$var wire 1 " Sum $end
+$var wire 1 # Cout_d $end
+$var wire 1 $ Cout $end
+$var reg 1 % A $end
+$var reg 1 & A_d $end
+$var reg 1 ' B $end
+$var reg 1 ( B_d $end
+$var reg 1 ) Cin $end
+$var reg 1 * Cin_d $end
+$scope module U1 $end
+$var wire 1 % A $end
+$var wire 1 ' B $end
+$var wire 1 ) Cin $end
+$var wire 1 $ Cout $end
+$var wire 1 " Sum $end
+$upscope $end
+$scope module U2 $end
+$var wire 1 & A $end
+$var wire 1 ( B $end
+$var wire 1 * Cin $end
+$var wire 1 # Cout $end
+$var wire 1 ! Sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+x#
+0"
+x!
+$end
+#5
+0!
+#8
+0#
+#10
+1"
+1*
+1)
+#13
+1!
+#20
+0*
+1(
+0)
+1'
+#30
+1$
+0"
+1*
+1)
+#34
+1#
+#35
+0!
+#40
+0$
+1"
+0*
+0(
+1&
+0)
+0'
+1%
+#43
+1!
+#48
+0#
+#50
+1$
+0"
+1*
+1)
+#54
+1#
+#55
+0!
+#60
+0*
+1(
+0)
+1'
+#70
+1"
+1*
+1)
+#73
+1!
+#90

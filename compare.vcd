@@ -1,0 +1,53 @@
+$date
+	Sun Jan 26 18:22:41 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module compare_nbit_tb $end
+$var wire 1 ! lt $end
+$var wire 1 " gt $end
+$var wire 1 # eq $end
+$var reg 16 $ A [15:0] $end
+$var reg 16 % B [15:0] $end
+$scope module UUT $end
+$var wire 16 & A [15:0] $end
+$var wire 16 ' B [15:0] $end
+$var parameter 32 ( C $end
+$var reg 1 # eq $end
+$var reg 1 " gt $end
+$var reg 1 ! lt $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 (
+$end
+#0
+$dumpvars
+b100 '
+b101 &
+b100 %
+b101 $
+0#
+1"
+0!
+$end
+#10
+1#
+0"
+b110 %
+b110 '
+b110 $
+b110 &
+#20
+1!
+0#
+b101 %
+b101 '
+b11 $
+b11 &

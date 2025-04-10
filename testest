@@ -1,0 +1,32 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 11;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000239e32c2df0 .scope module, "mod1" "mod1" 2 2;
+ .timescale -9 -11;
+    .port_info 0 /OUTPUT 1 "set";
+P_00000239e32f51c0 .param/real "d" 0 2 6, Cr<m6333333333333400gfc2>; value=1.55000
+v00000239e32c2f80_0 .var "set", 0 0;
+    .scope S_00000239e32c2df0;
+T_0 ;
+    %pushi/vec4 0, 1, 1;
+    %store/vec4 v00000239e32c2f80_0, 0, 1;
+    %delay 155, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000239e32c2f80_0, 0, 1;
+    %delay 155, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000239e32c2f80_0, 0, 1;
+    %vpi_call 2 12 "$display", $time, " ", "set = ", v00000239e32c2f80_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "test.v";

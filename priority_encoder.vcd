@@ -1,0 +1,29 @@
+$date
+	Sun Jan 26 17:32:34 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module prio_encoder_tb $end
+$var wire 3 ! code [2:0] $end
+$var reg 8 " in [7:0] $end
+$scope module DUT $end
+$var wire 8 # in [7:0] $end
+$var reg 3 $ code [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10

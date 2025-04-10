@@ -1,0 +1,104 @@
+$date
+	Sat Feb 01 10:24:42 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module xor_bitwise_tb $end
+$var wire 16 ! result [15:0] $end
+$var reg 16 " a [15:0] $end
+$var reg 16 # b [15:0] $end
+$scope module DUT $end
+$var wire 16 $ a [15:0] $end
+$var wire 16 % b [15:0] $end
+$var wire 16 & f [15:0] $end
+$var parameter 32 ' N $end
+$scope begin genblk1[0] $end
+$var parameter 2 ( p $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 ) p $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 * p $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 + p $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var parameter 4 , p $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var parameter 4 - p $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var parameter 4 . p $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var parameter 4 / p $end
+$upscope $end
+$scope begin genblk1[8] $end
+$var parameter 5 0 p $end
+$upscope $end
+$scope begin genblk1[9] $end
+$var parameter 5 1 p $end
+$upscope $end
+$scope begin genblk1[10] $end
+$var parameter 5 2 p $end
+$upscope $end
+$scope begin genblk1[11] $end
+$var parameter 5 3 p $end
+$upscope $end
+$scope begin genblk1[12] $end
+$var parameter 5 4 p $end
+$upscope $end
+$scope begin genblk1[13] $end
+$var parameter 5 5 p $end
+$upscope $end
+$scope begin genblk1[14] $end
+$var parameter 5 6 p $end
+$upscope $end
+$scope begin genblk1[15] $end
+$var parameter 5 7 p $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111 7
+b1110 6
+b1101 5
+b1100 4
+b1011 3
+b1010 2
+b1001 1
+b1000 0
+b111 /
+b110 .
+b101 -
+b100 ,
+b11 +
+b10 *
+b1 )
+b0 (
+b10000 '
+$end
+#0
+$dumpvars
+b101010001010100 &
+b1111111111111111 %
+b1010101110101011 $
+b1111111111111111 #
+b1010101110101011 "
+b101010001010100 !
+$end
+#10
+b101010101010101 #
+b101010101010101 %
+b100000001 "
+b100000001 $
+#30

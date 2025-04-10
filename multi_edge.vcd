@@ -1,0 +1,77 @@
+$date
+	Thu Jan 30 13:34:43 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multi_edge_clk_tb $end
+$var wire 8 ! f [7:0] $end
+$var wire 8 " c [7:0] $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 1 % clk $end
+$var reg 8 & d [7:0] $end
+$scope module DUT $end
+$var wire 8 ' a [7:0] $end
+$var wire 8 ( b [7:0] $end
+$var wire 1 % clk $end
+$var wire 8 ) d [7:0] $end
+$var reg 8 * c [7:0] $end
+$var reg 8 + f [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx +
+bx *
+b11110 )
+b10100 (
+b11110 '
+b11110 &
+0%
+b10100 $
+b11110 #
+bx "
+bx !
+$end
+#5
+b110010 "
+b110010 *
+1%
+#10
+b10100 !
+b10100 +
+0%
+#15
+1%
+#20
+0%
+#25
+1%
+b110010 &
+b110010 )
+b101000 $
+b101000 (
+b1010 #
+b1010 '
+#30
+b0 !
+b0 +
+0%
+#35
+1%
+#40
+0%
+#45
+1%
+#50
+0%
+#55
+1%
